@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body { /* Comentário em CSS */
+            background-color: rgb(60, 60, 86);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgba(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo!</h1> <!-- Comentário em HTML -->
+    <p>Meu primeiro código JS</p>
+    <script>
+        var n1 = Number(prompt('Digite um número: ')) //recebe valor string
+        var n2 = Number(prompt('Digite outro número: ')) //recebe valor string
+        var s = n1 + n2 //tem que converter string para number
+        alert(`A soma entre os números ${n1} e ${n2} é igual a: ${s}! `) //template string
+        //${} é chamado de placeholder
+    </script>
+</body>
+</html>
