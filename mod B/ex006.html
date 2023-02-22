@@ -4,26 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex 06</title>
+    <title>Aula 02 de DOM</title>
     <style>
         body {
-            background-color: rgb(105, 105, 173);
-            color: white;
-            font: normal 20pt Arial;
+            font: Normal 20pt Arial;
         }
-        h1 {
-            color: rgb(255, 212, 22);
+        div#area {
+            background-color: rgb(42, 139,42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Olá Mundo!</h1>
-    <p>Já me livrei da maldição!!</p>
+    <div id="area">
+        Interaja...
+    </div>
     <script>
-        var n1 = Number(prompt('Digite um número: '));
-        var n2 = Number(prompt('Digite outro número: '));
-        var s = Number(n1 + n2);
-        alert(`A soma entre os números ${n1} e ${n2} é igual a: ${s}`);
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'green'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'blue'
+        }
+        function sair() {
+            a.innerText = 'Saiu...'
+            a.style.background = 'red'
+        }
     </script>
 </body>
 </html>

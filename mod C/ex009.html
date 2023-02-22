@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu País</title>
+    <style>
+        body {
+            font: Normal 14pt Arial;
+            background-color: lightblue;
+        }
+        h1 {
+            text-align: center;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.314);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Verificador de origem</h1>
+    <label for="paisori">Digite seu País de origem: </label>
+    <input type="text" name="paisori" id="paisori">
+    <input type="button" value="Verificar" onclick="validar()">
+    <div id="resp">
+        
+    </div>
+    <script>
+        function validar() {
+            var pais = document.querySelector('input#paisori').value
+            var resp = document.querySelector('div#resp')
+            resp.innerHTML = `<p>Atualmente você mora no ${pais} </p><br>`
+            if (pais != 'Brasil') {
+                resp.innerHTML += `Você é um Estrangeiro!`
+            } else {
+                resp.innerHTML += `<p>Você é um Brasileiro!</p>`
+                resp.innerHTML += '<p>&#x1F3AD</p>'
+            }
+            
+        }
+    </script>
+</body>
+</html>
