@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de idade</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,16 +13,17 @@
     </header>
     <section>
         <div>
-            <label for="txtano">Ano de Nascimento: </label>
-            <input type="number" name="txtano" id="txtano" min="0">
-            <p>Sexo:
+            <label for="anonasc">Ano de Nascimento: </label>
+            <input type="number" name="anonasc" id="anonasc" min="0">
+            <p>
+                Sexo:
                 <input type="radio" name="radsex" id="masc" checked>
                 <label for="masc">Masculino</label>
                 <input type="radio" name="radsex" id="femi">
                 <label for="femi">Feminino</label>
             </p>
             <p>
-                <input type="button" value="Verificar" onclick="verif()">
+                <input type="button" value="Verificar" onclick="verificar()">
             </p>
         </div>
         <div id="res">
@@ -30,7 +31,8 @@
         </div>
     </section>
     <footer>
-        <p>&copy; <a href="https://www.github.com/diggous">Diggous</a></p>
+        <p>&copy; Diggous</p>
     </footer>
+    <script src="verificador.js"></script>
 </body>
 </html>

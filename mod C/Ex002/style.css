@@ -1,40 +1,34 @@
 @charset "UTF-8";
 
 body {
+    background-color: rgb(75, 75, 153);
     font: normal 1em Arial;
-    background-color: rgb(86, 86, 211);
 }
 
 header {
     text-align: center;
     color: white;
-
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.285);
 }
 
 section {
     background-color: white;
-    width: 500px;
     border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.277);
+    padding: 15px;
+    width: 500px;
     margin: auto;
-}
-
-div {
-    margin: 0px;
-    padding: 5px 20px;
-}
-
-div#ano {
-    padding-top: 30px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.411);
 }
 
 footer {
+    color: white;
     text-align: center;
-    color: white;
-}
-
-footer > p > a {
-    color: white;
-    text-decoration: none;
     font-style: italic;
 }
+
+#foto {
+    border-radius: 50%;
+    width: 300px;
+    height: 350px;
+}
+
