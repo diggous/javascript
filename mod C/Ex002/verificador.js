@@ -2,9 +2,6 @@ function verificar() {
     var ano = new Date().getFullYear()
     var fano = document.querySelector('input#anonasc').value
     var res = document.querySelector('div#res')
-    //var sexo = document.getElementsByTagName('radsex')
-    //var fem = document.querySelector('input#femi')
-    //var mas = document.getElementById('masc')
     if (fano.length == 0 || fano > ano) {
         alert('[ERRO] Verifique os dados informados e tente novamente!')
     } else {
