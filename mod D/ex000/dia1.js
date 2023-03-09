@@ -10,7 +10,7 @@ if (numeroUm == stringUm) {
 } else {
     console.log(`As variáveis número ${numeroUm} e a string ${stringUm} não tem o mesmo valor`)
 }
-if (numeroTrinta == parseInt(stringTrinta, Number)) {
+if (numeroTrinta == stringTrinta) {
     console.log(`As variáveis numero ${numeroTrinta} e string ${stringTrinta} tem o mesmo valor e mesmo tipo`)
 } else {
     console.log(`As variáveis numero ${numeroTrinta} e string ${stringTrinta} não tem o mesmo tipo`)
