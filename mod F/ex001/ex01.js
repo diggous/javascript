@@ -1,9 +1,9 @@
-let num = document.querySelector('input#fnum')
-let lista = document.querySelector('select#flista')
-let res = document.querySelector('div#res')
-let valores = []
+let num = document.querySelector('input#fnum') //traz os dados de fnum para var num
+let lista = document.querySelector('select#fLista') //traz o acesso a lista
+let res = document.querySelector('div#res') //traz acesso a div que vai ter a resposta
+let valores = [] //array, vetor vazio que vai ser utilizado para verificar os dados
 
-function isNumero(n){
+function isNumero(n) {
     if(Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
@@ -11,7 +11,7 @@ function isNumero(n){
     }
 }
 
-function inLista(n, l){
+function inLista(n, l) {
     if (l.indexOf(Number(n)) != -1) {
         return true
     } else {
@@ -19,10 +19,10 @@ function inLista(n, l){
     }
 }
 
-function adicionar() {
-    if(isNumero(num.value) && !inLista(num.value, valores)) {
-        
+function adicionar() { // função do botão adicionar
+    if (isNumero(num.value) && !inLista(num.value, valores)){ //se for um número e não estiver na lista / !inlista = não estiver na lista
+        valores.push(Number(num.value))
     } else {
-        alert('Valor inválido ou já encontrado na lista.')
+        alert('Valor inválido ou já encontrado na lista')
     }
 }
